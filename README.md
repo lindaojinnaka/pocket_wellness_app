@@ -2,10 +2,17 @@
 
 ## development instructions 
 ```shell
-git add FILE  # this adds FILE
-git commit -m "MY MESSAGE" # This commits our files. Add a message in the ""
+# sanity check, make sure i'm doing what I think I'm doing. 
+git status
 
-git push #  sends our files to git hub
+# this adds all changed files 
+git add . 
+
+# This commits our files. Replace MY MESSAGE with something descriptive.
+git commit -m "MY MESSAGE" 
+
+# sends our files to git hub
+git push 
 ```
 
 ## installation 
