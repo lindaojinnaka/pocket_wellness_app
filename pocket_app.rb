@@ -3,21 +3,12 @@ require "tty-prompt"
 
 
 def ask_question (question, options = {})# defining a method called ask_question that takes two parameters.
-
     prompt = TTY::Prompt.new #creating a new prompt with the gem 
     if options.length == 0 # its asking if we have no options 
         return prompt.ask(question) # if so, ask question and return what they type in. they press enter and its returned back to the caller 
     else 
-        return prompt.select(question, options) #if there are options, then we want to present the user with the choice of options 
-            
-    end 
-    # puts question 
-    # # puts options #convert this line to a loop that prints each elements' options.
-    # options.each do|option|
-    #     puts "x) #{option}"
-        
-    # end
-    # return gets.chomp
+        return prompt.select(question, options) #if there are options, then we want to present the user with the choice of options        
+    end
 end 
 
 puts "Welcome to My Pocket Wellness App!"
