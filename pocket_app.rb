@@ -11,14 +11,20 @@ def ask_question (question, options = {})# defining a method called ask_question
     end
 end 
 
+def cues(poses)
+    puts "Here are some great poses you can try:"
+    poses.each do |pose|
+        puts "  * #{pose}."
+    end
+end
+
+
 puts "Welcome to My Pocket Wellness App!"
 
-sleep(2)
 
 name = ask_question("What is your name?") #have a variable name that is set to the result of the method call ask question)
 puts "Hello #{name}" 
 
-sleep(1)
 
 time = ask_question(
     "How much time do we have today?", {
@@ -27,7 +33,6 @@ time = ask_question(
         "1 hour" => 60
         }) #first paarameter is string, the second is an array with 3 values. The array's values has to be in quation marks to make it a string 
 
-sleep(1)
 
 location = ask_question(
     "Cool! And will we be working at your desk or in a room with space?", {
@@ -48,5 +53,5 @@ if location == "Desk" and time == 15
 end
 # ask_question("How are you feeling today?")
 if location == "Desk" && mental_state == "Block" && time >=30
-    puts "Seated Cat/Cow", "Seated Mountain", "Seated Twist", "Eagle Arms", "Seated Twist", "Seated Savasana"
+    cues([ "Seated Cat/Cow", "Seated Mountain", "Seated Twist", "Eagle Arms", "Seated Twist", "Seated Savasana"])
 end 
