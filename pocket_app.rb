@@ -2,12 +2,12 @@
 require "tty-prompt"
 
 
-def ask_question (question, options = {})# defining a method called ask_question that takes two parameters.
-    prompt = TTY::Prompt.new #creating a new prompt with the gem. nested it inside the ask_question method 
-    if options.length == 0 # its asking if we have no options 
-        return prompt.ask(question) # if so, ask question and return what they type in. they press enter and its returned back to the caller 
+def ask_question (question, options = {})
+    prompt = TTY::Prompt.new 
+    if options.length == 0 
+        return prompt.ask(question) 
     else 
-        return prompt.select(question, options) #if there are options, then we want to present the user with the choice of options        
+        return prompt.select(question, options)   
     end
 end 
 
@@ -22,16 +22,16 @@ end
 puts "Welcome to My Pocket Wellness App!"
 
 
-name = ask_question("What is your name?") #have a variable name that is set to the result of the method call ask question)
+name = ask_question("What is your name?") 
 puts "Hello #{name}" 
 
 
 time = ask_question(
     "How much time do we have today?", {
-        "15 minutes" => 15, #saved hashes so i wouldnt have to type the whole prompt in my if statements 
+        "15 minutes" => 15, 
         "30 min" => 30, 
         "1 hour" => 60 
-        }) #first paarameter is string, the second is an array with 3 values. The array's values has to be in quation marks to make it a string 
+        }) 
 
 
 location = ask_question(
@@ -42,7 +42,7 @@ location = ask_question(
 
 mental_state = ask_question(
     "How are you feeling today?", {
-        "I am feeling tired" => "Tired", #saved hashes so i wouldnt have to type the whole prompt in my if statements 
+        "I am feeling tired" => "Tired",  
         "I am feeling anxious" => "Anxious",
         "I feel great" => "Great",
         "I have a mental block" => "Block"
@@ -51,7 +51,7 @@ mental_state = ask_question(
 if location == "Desk" and time == 15
     puts "Got it! Let's be quick."
 end
-# ask_question("How are you feeling today?")
+
 if location == "Desk" && mental_state == "Block" && time >=30
     cues([ "Seated Cat/Cow", "Seated Mountain", "Seated Twist", "Eagle Arms", "Seated Twist", "Seated Savasana"])
 end 
@@ -61,23 +61,23 @@ if time == 15
     cues(["Seated Cat/Cow, Seated Mountain, Seated Twist, Eagle Arms, Seated Savasana"])
 end
 
-# For Z
+
 if location == "Desk" && (mental_state == "Anxious" || mental_state == "Tired") && time == 30
     cues(["Puppy dog with chair" ,"Seated Side Stretch" ,"Seated Twist","Seated mountain", "Seated Savasana"])
 end 
 
-# For Y
+
 
 if location == "room" and mental_state == "Blocked" && (time > 15)
     cues(["Childs Pose","Cat/Cow", "Mountain", "Standing Twist", "Eagle Arms", "Bridge","Reclined Savasana"])
 end 
 
-# For C  
+  
 if location == "Desk" && (mental_state == "Anxious" || mental_state == "Tired") && time == 60  
     cues(["Seated Cat/Cow","Seated Mountain","Seated Twist","Sun Salutation with chair","Eagle", "Tree", "Seated Twist","Seated Savasana" ])   
 end 
 
-# For D 
+
 if location == "Desk" && mental_state == "Great" && time >= 15
     cues(["Seated Cat/Cow", "Seated Mountain", "Seated Twist", "Eagle Arms", "Seated Twist", "Seated Savasana"])
 end 
@@ -85,7 +85,7 @@ end
 if location == "room" && mental_state == "Great" && time > 15 
     cues(["Cat Cow", "Thread the Needle", "Down Dog" "Sun A", "Sun B" "Warrior 1", "Warrior 2", "Warrior 3", "Childs", "Savasana"])
 end 
-#For Y ])
+
 
 if location == "room" && mental_state != "Mental Block"
     if time == 30
@@ -97,4 +97,4 @@ end
 end  
 
 
-#For E 
+
