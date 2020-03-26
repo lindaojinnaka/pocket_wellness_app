@@ -1,17 +1,20 @@
 # Pocket Wellness App 
 
-## development instructions 
+Develop a statement of purpose and scope for your application. It must include:
 
-# sanity check, make sure i'm doing what I think I'm doing. 
+The Pocket Wellness app is designed specifically for office workers or those working from home and who sit at a desk the majority of their workday. Studies have shown sitting at a desk for extended period of time can contribute to fatigue, soreness in the body, mental block, and anxiety. Office workers are particularly prone to experiencing these issues because they are the population that sits for the majority of the day. The Pocket Wellness app can be used to alleviate  the above by targeting the users mental and physical state through yoga. Yoga poses are customised according to the mental state, location, and time limits of the user. In addition to this, the yoga poses given to the user are designed to target different areas in the body that experience tension and tightness as a result of sitting at a desk throughout the day. Shoulder, upper back, hips, and hamstrings are targeted throughout each sequence so that the user can experience a full body stretch.
 
+I am developing this application because I wanted to create something that I would actually use and that would benefit my health and wellness. As a future office worker, I would love to be able to prioritise intervals of stretching and movement throughout the day. However, I understand this may not be possible because of work loads, time constraints, or not being able to go to a room to practice yoga. When designing this application, I kept all of these factors in mind that may inhibit a workers day to day ability to get movement into their work schedule.  By factoring in these variables, the app delivers a custom yoga sequence that will provide relief in the body and mental state. As a result, productivity at work will improve and most importantly the office worker will be left feeling rejuvenated and more at ease.   
 
-# this adds all changed files 
+Develop a list of features that will be included in the application. It must include:
 
+The three features included in my application are the mental state feature, the time feature, and the location feature. 
 
-# This commits our files. Replace MY MESSAGE with something descriptive.
+The time feature allows the user to select from three time options: Fifteen minutes, Thirty minutes, and Sixty minutes. The user is given three options which factors in realistic time restraints for the typical office workers. In my opinion, fifteen minutes and sixty minutes would possibly be the most frequently chosen variables. Fifteen minutes could factor in a quick break or perhaps the remaining quarter of an hour long break, while an hour break is the most common break people who work 9-5 receive.  Thirty minutes would also be a great option for those who would like to stretch for the first half of their break then eat after, or for those who have a busy work day and can only take half of their 60 minute break. 
 
+The mental state feature is my favourite feature and what makes this app shine. The four  mental states provided to the user are “I am feeling tired”, “I am feeling anxious”, “I feel great”, “I have a mental block.”  The users are able to choose from mental states that are commonly experienced when working in an office and aside from the “great” variable, all of the mental states would be the reason why a user would need a wellness app. I also love the “I am feeling great” feature because it caters users who  want to maintain their mental state rather than change it. It could also be an option for users who pick a different mental state and would like to practice a different set of poses when they feel better and have an extra 15 or 30 minutes remaining in their break. 
 
-# sends our files to git hub
+The location feature gives the user two options: “At my room” and “In a room with space”. This last feature allows the user to further customise their feature by giving them two options that could qualify as more. For example, “In a room with a space” could account for a location at home, an exercise room at work, or even space outside. I also wanted to make sure I was a little vague so when giving the option of “In a room with space” in order to encourage the users to be creative when finding or making a space to stretch in. Additionally, if the user a room with a space that may be a room at their home, the option would resonate more with them rather than simply giving them the option of “A room at work” for instance. 
 
 
      
