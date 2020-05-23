@@ -46,7 +46,11 @@ The mental feature is the second priority and adds slight variations to the fina
 The time, location, and mental state feature all have the same duration of time between prompts and time displayed on the screen.
 
 Gems 
->>* TTY-Prompt
+>>* TTY-Prompt 
+
+
+Gem installation: Type the following in terminal
+>>gem install tty-prompt
 
 
  
