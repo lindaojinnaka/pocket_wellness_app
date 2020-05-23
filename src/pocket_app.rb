@@ -2,6 +2,10 @@
 require "tty-prompt"
 
 
+def welcome_message
+    prompt = TTY:Prompt.new
+    puts "Welcome to Pocket Wellness App"
+
 def ask_question (question, options = {})
     prompt = TTY::Prompt.new 
     if options.length == 0 
