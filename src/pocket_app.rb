@@ -1,10 +1,10 @@
 # https://github.com/piotrmurach/tty-prompt
-require "tty-prompt"
-
+require "tty-prompt" 
 
 def welcome_message
     prompt = TTY:Prompt.new
     puts "Welcome to Pocket Wellness App"
+end
 
 def ask_question (question, options = {})
     prompt = TTY::Prompt.new 
@@ -94,12 +94,9 @@ end
 
 if location == "room" && mental_state != "Mental Block"
     if time == 30
-    cues (["Corpse Pose", "Knee to Chest", "Reclined Twist", "Down Dog", "Sun A", "Sun B", "Wide Legged Forward Fold", "Mountain", "Happy Baby", "Savasana"]) 
+        cues (["Corpse Pose", "Knee to Chest", "Reclined Twist", "Down Dog", "Sun A", "Sun B", "Wide Legged Forward Fold", "Mountain", "Happy Baby", "Savasana"]) 
     elsif time == 60
-    puts "E"
-    cues (["Hero Pose", "Thread the Needle","Down Dog","Down Dog Plank Cycle", "Down Dog", "Mountain","Eagle", "Sun Salutation A", "Sun Salutation B","Eagle (x2)","Tree (x2)","Legs up the Wall", "Savasana"])
+        puts "E"
+        cues (["Hero Pose", "Thread the Needle","Down Dog","Down Dog Plank Cycle", "Down Dog", "Mountain","Eagle", "Sun Salutation A", "Sun Salutation B","Eagle (x2)","Tree (x2)","Legs up the Wall", "Savasana"])
+    end
 end
-end  
-
-
-
